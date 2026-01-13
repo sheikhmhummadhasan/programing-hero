@@ -3,96 +3,78 @@
     margin: 0px;
     box-sizing: border-box;
 }
-body{
-    background-image: url(https://images.unsplash.com/photo-1549880338-65ddcdfd017b);
-    background-size: cover;
-    width: 100%;
-    min-height: 100vh;
-}
-.box{
-    height: 300px;
-    width:100% ;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 140px;
-}
-.box-1{
-    height: 270px;
-    width: 250px;
-    background: transparent;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 12px #06ff06;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.email-1{
-    height: 17px;
-    border: none;
-    border-bottom: 1px solid white;
-    background:none;
-    outline: none;
-}
-.password-1{
-    height: 17px;
-    border: none;
-    border-bottom: 1px solid white;
-    background:none;
-    outline: none;
-}
-.c-password{
-    height: 17px;
-    border: none;
-    border-bottom: 1px solid white;
-    background:none;
-    outline: none;
-}
-.c-password::placeholder{
-    color: #1f1c8f;
-}
-.password-1::placeholder{
-    color:#1f1c8f
-}
-.email-1::placeholder{
-    color:#1f1c8f
-}
-.heding{
-    color: #000000
-}
-.pra{
-    color: #1f1c8f;
-    cursor: pointer;
-}
-.btn-1{
-    height:25px ;
-    width: 100px;
-    border: none;
-    border-radius: 25px;
-    background-color: #1f1c8f;
-    color: #fff;
-    cursor: pointer;
-}
-.btn-2{
-    height:25px ;
-    width: 100px;
-    border: none;
-    border-radius: 25px;
-    background-color: #1f1c8f;
-    color: #fff;
-    cursor: pointer;
-}
-.box-2{
-    height: 270px;
-    width: 250px;
-    background: transparent;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 12px #06ff06;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
+body{
+    background-image:url(illustration-japanese-city.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #fffcfc;
+    font-family: 'Times New Roman', Times, serif;
+}
+.gigital-watch{
+    font-size: 5rem;
+    text-shadow: 0px 0px 10px #0eefff ;
+    color: black;
+
+}
+.watch{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px #0eefff;
+}
+.watch .time{
+    position: absolute;
+    transform: rotate(calc(30deg*var(--i)));
+    text-align: center;
+    inset: 12px;
+}
+.watch .time b{
+    transform: rotate(calc(-30deg*var(--i)));
+    display: inline-block;
+    text-shadow:0px 0px 5px #0eefff;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: black;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+}
+.hand{
+    position: absolute;
+    top: 53%;
+    left: 53%;
+    transform-origin: bottom;
+}
+.hour{
+    position: absolute;
+    height: 50px;
+    width: 6px;
+    border-radius: 40%;
+    background-color: black;
+}
+.min{
+    position: absolute;
+    height: 57px;
+    width: 4px;
+    border-radius: 40%;
+    background-color: rgb(50, 15, 132);
+}
+.sec{
+    position: absolute;
+    height: 63px;
+    width: 2.5px;
+    border-radius: 40%;
+    background-color: rgb(255, 0, 0);
+}
